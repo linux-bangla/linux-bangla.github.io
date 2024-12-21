@@ -1,6 +1,3 @@
-# Created by https://www.toptal.com/developers/gitignore/api/hugo
-# Edit at https://www.toptal.com/developers/gitignore?templates=hugo
-
 ### Hugo ###
 # Generated files by hugo
 /public/
@@ -11,5 +8,4 @@ hugo_stats.json
 # Temporary lock file while building
 /.hugo_build.lock
 
-# End of https://www.toptal.com/developers/gitignore/api/hugo
 
