@@ -81,7 +81,7 @@ params:
   ShowPageNums: true
   ShowToc: true
   # comments: false
-  images: ["images/papermod-cover.png"]
+  images: ["assets/images/cover.png"]
 
   profileMode:
     enabled: false
@@ -131,15 +131,15 @@ params:
       url: ""
 
   editPost:
-    URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
+    URL: "https://github.com/linux-bangla/linux-bangla.github.io/tree/main/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
   # label:
   # iconSVG: '<svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" fill="currentColor"><path d="M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"/></svg>'
   # text: "Home"
-  # icon: icon.png
-  # iconHeight: 35
+  icon: "/assets/icons/favicon-32x32.png"
+  iconHeight: 35
 
   # analytics:
   #     google:
@@ -147,11 +147,11 @@ params:
 
   assets:
     disableHLJS: true
-  #     favicon: "<link / abs url>"
-  #     favicon16x16: "<link / abs url>"
-  #     favicon32x32: "<link / abs url>"
-  #     apple_touch_icon: "<link / abs url>"
-  #     safari_pinned_tab: "<link / abs url>"
+    favicon: "/assets/icons/android-icon-48x48.png"
+    favicon16x16: "/assets/icons/favicon-16x16.png"
+    favicon32x32: "/assets/icons/favicon-32x32.png"
+    apple_touch_icon: "/assets/icons/apple-icon.png"
+    safari_pinned_tab: "/assets/icons/apple-icon.png"
 
   # cover:
   #     hidden: true # hide everywhere but not in structured data
