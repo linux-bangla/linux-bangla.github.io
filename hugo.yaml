@@ -1,6 +1,6 @@
 # If your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would
 # contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
-baseURL: "http://localhost"
+baseURL: "https://linux-bangla.github.io"
 title: Linux Bangla Blog
 copyright: "© 2024 [Linux Bangla Community](https://t.me/linux_bangla)"
 theme: [PaperMod]
