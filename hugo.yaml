@@ -202,3 +202,11 @@ services:
     disableInlineCSS: true
   twitter:
     disableInlineCSS: true
+
+
+permalinks:
+  page:
+    posts: /:sections[1:]/:slug/
+  section:
+    posts: /:sections[1:]/
+
