@@ -107,24 +107,28 @@ hugo server serve -D
 চলুন এবার আমরা `content` ফোল্ডারে প্রবেশ করি। এখানে এরকম কিছূ একটা structure লক্ষ করবেন,
 
 ```
-├── admin
-│   ├── code_syntax copy.md
-│   ├── emoji-support.md
-│   ├── how-to-guide.md
-│   ├── _index.md
-│   ├── markdown-syntax.md
-│   ├── math-typesetting.md
-│   └── rich-content.md
+content
+├── posts
+│   └── admin
+│       ├── code_syntax copy.md
+│       ├── emoji-support.md
+│       ├── _index.md
+│       ├── markdown-syntax.md
+│       ├── math-typesetting.md
+│       └── rich-content.md
+├── _index.md
 ├── archives.md
 └── search.md
+
 ```
-> হয়তো আপনি দুটো ফাইল পাবেন, `archives.md` এবং `search.md` এই দুটো ফাইল নিয়ে আমরা কাজ করবো না। আরো কয়েকটি ফোল্ডার দেখতে পারবেন।
+
+> এখান থেকে আমরা `posts` ফোল্ডারে প্রবেশ করলাম। মূলত আমরা এই `posts` এর ভেতরেই আমাদের কাজ করবো।
 
 > এখানে উপরের স্টাকচারে কেবল একটা ফোল্ডার `admin` দেখতে পাচ্ছি আমরা। আদতে আপনি হয়তো আরো ফোল্ডার দেখতে পারবেন। এখানে প্রতিটি ফোল্ডার হলো এক একটি পরিচিতি।
 
 ## নিজেকে যুক্ত করি
 
-এখন আমরা নিজেকে যুক্ত করতে চাই এই সিস্টেমে। তাহলে আমরা মূলত এই `content` এর অধীনে নিজেদের নামে একটা ফোল্ডার তৈরি করে নিবো। তারপর আমাদের যা যা কাজ সব আমরা আমাদের নিজেদের
+এখন আমরা নিজেকে যুক্ত করতে চাই এই সিস্টেমে। তাহলে আমরা মূলত এই `posts` এর অধীনে নিজেদের নামে একটা ফোল্ডার তৈরি করে নিবো। তারপর আমাদের যা যা কাজ সব আমরা আমাদের নিজেদের
 নামের ফোল্ডারেই করবো, এতে করে আমাদের একজনের কাজের সাথে আরেকজনের কাজের কোনো conflict থাকবে না।
 
 > এই কাজ কেবল একবারই করতে হবে আমাদের। চিন্তার কিছূ নেই।
@@ -159,19 +163,22 @@ description: একটি ছোট বিবরণ
 তাহলে আমাদের ফাইলের structure হবে,
 
 ```markdown
-├── admin
-│   ├── code_syntax copy.md
-│   ├── emoji-support.md
-│   ├── how-to-guide.md
-│   ├── _index.md
-│   ├── markdown-syntax.md
-│   ├── math-typesetting.md
-│   └── rich-content.md
+content
 ├── archives.md
-├── search.md
-└── sharafat
-    ├── _index.md
-    └── my-first-post.md
+├── _index.md
+├── posts
+│   ├── admin
+│   │   ├── code_syntax copy.md
+│   │   ├── emoji-support.md
+│   │   ├── _index.md
+│   │   ├── markdown-syntax.md
+│   │   ├── math-typesetting.md
+│   │   └── rich-content.md
+│   └── sharafat
+│       ├── my-first-post.md
+│       └── _index.md
+└── search.md
+
 ```
 
 ## ফাইলের ভেতর কি কি থাকবে?
@@ -204,6 +211,8 @@ TocOpen: true
 > **showToc = true** হলে আপনার পোস্টে একটা টেবিল অফ কন্টেন্ট দেখা যাবে।
 
 > আর **TocOpen = true** হলে টেবিল অফ কন্টেন্ট সব সময় খোলা থাকবে।
+
+আরো বিস্তারিত জানতে [এই লিংকটি](https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-variables/) ব্যবহার করুন।
 
 ### নিবন্ধের মুল অংশ
 
