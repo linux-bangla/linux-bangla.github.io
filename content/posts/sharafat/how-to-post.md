@@ -7,6 +7,7 @@ summary: "লিনাক্স বাংলা ব্লগে পোষ্ট 
 tags: ["markdown", "syntax", "code", "guide"]
 categories: ["github", "guide"]
 series: ["Themes Guide"]
+url: "how-to-post"
 cover:
 ShowToc: true
 TocOpen: true
