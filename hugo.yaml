@@ -99,16 +99,10 @@ params:
   homeInfoParams:
     Title: "লিনাক্স বাংলা ব্লগ"
     Content: >
-                👋 আমাদের লিনাক্স বাংলা ব্লগে আপনাকে স্বাগত!
+      👋 আমাদের লিনাক্স বাংলা ব্লগে আপনাকে স্বাগত!
+      ✨ আমাদের নিজেদের মধ্যে জ্ঞানের একটি প্রবাহমান জ্ঞানের একটি আবেশ সৃষ্টি করতে এবং অর্জিত জ্ঞানকে সবার মাঝে ভাগাভাগি করে নিতে, আমাদের নিজেদের হাতে গড়া একটি প্লাটফর্ম।
+      🎯 এখানে আমাদের কমিউনিটির যে কেউ নিবন্ধ রচনা এবং একে অন্যের ভুল-সংশোধনের সুযোগ পাবেন।
 
-
-                ✨ আমাদের নিজেদের মধ্যে জ্ঞানের একটি প্রবাহমান জ্ঞানের একটি আবেশ সৃষ্টি করতে এবং অর্জিত জ্ঞানকে সবার মাঝে ভাগাভাগি করে নিতে, আমাদের নিজেদের হাতে গড়া একটি প্লাটফর্ম।
-
-
-                🎯 এখানে আমাদের কমিউনিটির যে কেউ নিবন্ধ রচনা এবং একে অন্যের ভুল-সংশোধনের সুযোগ পাবেন।
-
-
-                🏁 বিস্তারিত আরো তথ্য সামনে আসছে...
 
   socialIcons:
     - name: github
@@ -171,13 +165,18 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+    renderHooks:
+      link:
+        enableDefault: true
+      image:
+        enableDefault: true
   highlight:
     noClasses: false
-    # anchorLineNos: true
-    # codeFences: true
-    # guessSyntax: true
-    # lineNos: true
-    # style: monokai
+    anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    style: monokai
 
 # privacy:
 #   vimeo:
@@ -203,10 +202,11 @@ markup:
 #   twitter:
 #     disableInlineCSS: true
 
-
 permalinks:
   page:
     posts: /:sections[1:]/:slug/
   section:
     posts: /:sections[1:]/
 
+ignoreFiles:
+  - "README\\.md$"
