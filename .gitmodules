@@ -1,3 +1,6 @@
 [submodule "themes/PaperMod"]
 	path = themes/PaperMod
 	url = https://github.com/adityatelange/hugo-PaperMod.git
+[submodule "content/posts/ektukhanilinux-contents"]
+	path = content/posts/ektukhanilinux-contents
+	url = https://github.com/linux-bangla/ektukhanilinux-contents
