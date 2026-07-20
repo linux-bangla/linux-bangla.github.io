@@ -162,14 +162,14 @@ params:
   #     keys: ["title", "permalink", "summary", "content"]
 
 markup:
-  goldmark:
-    renderer:
-      unsafe: true
-    renderHooks:
-      link:
-        enableDefault: true
-      image:
-        enableDefault: true
+  # goldmark:
+  #   renderer:
+  #     unsafe: true
+  #   renderHooks:
+  #     link:
+  #       enableDefault: true
+  #     image:
+  #       enableDefault: true
   highlight:
     noClasses: false
     anchorLineNos: true
